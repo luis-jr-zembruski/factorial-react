@@ -1,3 +1,5 @@
+import { Container } from "./style";
+
 interface FactorialProps {
   value: number;
 }
@@ -10,5 +12,9 @@ export function Factorial({ value }: FactorialProps) {
     value--;
   }
 
-  return <p>{result}</p>;
+  return (
+    <Container>
+      <p>{result}</p>
+    </Container>
+  );
 }
